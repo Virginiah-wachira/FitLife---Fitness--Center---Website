@@ -1,0 +1,170 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Fitness Center</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set background color to light gray */
+            color: #333; /* Set text color to dark gray */
+            text-align: center;
+        }
+
+        header {
+            background-color: #2ecc71; /* Set header background color to green */
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .class-schedule {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-schedule h2 {
+            color: #2ecc71; /* Set section heading color to green */
+        }
+
+        .class {
+            margin-bottom: 20px;
+        }
+
+        .class h3 {
+            color: #333; /* Set class heading color to dark gray */
+        }
+
+        .class p {
+            line-height: 1.6;
+        }
+
+        .membership-info {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .membership-info h2 {
+            color: #2ecc71; /* Set section heading color to green */
+        }
+
+        .membership-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .membership-option {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label,
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .submit-button {
+            background-color: #2ecc71; /* Set button color to green */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #27ae60; /* Darker green on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FitLife Fitness Center</h1>
+    </header>
+
+    <section class="class-schedule">
+        <h2>Class Schedule</h2>
+
+        <div class="class">
+            <h3>Cardio Blast</h3>
+            <p>Mondays & Wednesdays, 6:00 PM - 7:00 PM</p>
+        </div>
+
+        <div class="class">
+            <h3>Strength Training</h3>
+            <p>Tuesdays & Thursdays, 5:30 PM - 6:30 PM</p>
+        </div>
+
+        <div class="class">
+            <h3>Yoga Flow</h3>
+            <p>Fridays, 7:00 AM - 8:00 AM</p>
+        </div>
+    </section>
+
+    <section class="membership-info">
+        <h2>Membership Options</h2>
+
+        <div class="membership-options">
+            <div class="membership-option">
+                <h3>Basic Membership</h3>
+                <p>Access to gym facilities</p>
+                <p>$29.99/month</p>
+            </div>
+
+            <div class="membership-option">
+                <h3>Premium Membership</h3>
+                <p>Access to gym + all classes</p>
+                <p>$49.99/month</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <label > Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label > Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label > Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label > Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button class="submit-button" type="submit">Submit</button>
+        </div>
+    </section>
+</body>
+
+</html>
